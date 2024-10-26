@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1f;
+    color: white;
+}
+
+.container-my-chats {
+    background-color: #1d1d1f;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 25vw;
+    min-height: 1200px;
+    justify-content: space-between;
+}
+
+.chatsUsers{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1b;
+}
+
+.backSvg path {
+    fill: #ffffff;
+}
+
+.backSvg{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 0.3vw;
+    top: 1.5vw;
+}
+
+.user-list {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vw; /* Фиксированная высота блока с пользовательским списком */
+    overflow-y: auto; /* Добавляем скролл при необходимости */
+    padding: 10px;
+}
+
+.block-chat{
+    background-color: #28282a;
+    width: 15vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.info-chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+}
+
+.activ{
+    margin-left: 10px;
+}
+
+.main-search-container{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.inp-search{
+    width: 15vw;
+    height: 2vw;
+    user-select: none;
+}
+
+.but-search{
+    width: 4vw;
+    height: 2vw;
+    user-select: none;
+}
+
+.MyChat{
+    display: flex;
+    background-color: #28282a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 74vw;
+    max-height: 50vw;
+    overflow-y: auto; /* Добавляем скроллинг */
+
+}
+
+.block-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 5vw;
+    background-color: #1d1d1f;
+}
+
+.block-write{
+    width: 100%;
+    position: sticky; /* Изменяем позицию на sticky */
+    bottom: 0; /* Фиксируем элемент в нижней части */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 5vw;
+    background-color: #1d1d1f;
+    border: 2px solid #1d1d1f;
+}
+
+.main{
+    display: flex;
+}
+
+.block-write > input{
+    width: 50vw;
+    height: 2vw;
+    padding: 10px;
+    font-size: 1.2vw;
+}
+
+.block-write > button{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+    padding: 10px;
+    font-size: 1.2vw;
+}
+
+.block-frind-mess {
+    display: flex;
+    padding: 1vw;
+    border-radius: 1vw;
+    align-items: flex-start; /* Изменение выравнивания элементов внутри блока */
+    justify-content: flex-start; /* Изменение выравнивания контента внутри блока */
+    margin-left: 2vw;
+    margin-top: 1vw;
+    height: auto; /* Установка высоты сообщения на автоматическую высоту */
+    background-color: #1d1d1f;
+    width: 15vw;
+    word-wrap: break-word; /* Перенос текста на новую строку */
+}
+
+.block-my-mess {
+    display: flex;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    align-items: flex-end; /* Изменение выравнивания элементов внутри блока */
+    justify-content: flex-start; /* Изменение выравнивания контента внутри блока */
+    margin-left: 56vw;
+    height: auto; /* Установка высоты сообщения на автоматическую высоту */
+    background-color: #1d1d1f;
+    width: 15vw;
+    word-wrap: break-word; /* Перенос текста на новую строку */
+}
+
+.block_logout{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50vw;
+}
+
+.block_logout > button{
+    width: 7vw;
+    height: 2vw;
+    border-radius: 3vw;
+}
+
+.MyChat::-webkit-scrollbar {
+    width: 5px; /* Ширина скроллбара */
+    background-color: #28282a; /* Цвет фона скроллбара */
+}
+
+.MyChat::-webkit-scrollbar-thumb {
+    background-color: #303033;
+}
+
+.MyChat::-webkit-scrollbar-track {
+    background-color: #1a1a1b; /* Цвет фона скроллбара */
+}
+
+.MyChat::-webkit-scrollbar-thumb:hover {
+    background-color: #2b2b2e;
+}
